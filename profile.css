@@ -1,0 +1,178 @@
+/* 301582102שם המגישות: אלא זועבי 322856113 ,יעל זכריה */
+
+body {
+    background-image: url('background.jpg'); /* רקע הדף כולו */
+    background-attachment: fixed; /*הרקע לא זזה ומתפרשת על כל סמך כשהוא חוזר על עצמו*/
+    width: 80%; /* רוחב המקטע במסמך */
+    font-family: 'Serif Bree', serif;  /* הפונט של טקסט התוכן */
+    margin: 0 auto; /**/
+    padding: 0.3% 0; /* שוליים עיליונים ותלתונים */
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2); /* צללית אופקית ואנכית עם הצבע*/
+}
+.Alaa {
+   background-color: white; /* צבע הרקע */
+}
+.one{
+    height: 350px;/* הגובה של המיכל החיצוני   */
+    background: url('banner.png') no-repeat;/*תמונת רקע שלא חוזרת על עצמה. */
+    width: 100%; /* התמונה מתפרסת על 100% של המכיל*/
+    background-size: cover; /* התמונה מופיעה בהשלמותה בתוך המכיל*/
+    position: relative;/* הגדרת המיקום כרגע של האלמנט ביחס למיקום הרגיל שלו */
+    margin: 0 auto;/* מירוץ האלמנט באופן אוטומטי ברוחב */
+   /* padding: 0% 0% 0% 2%; /* אם עשיתי את זה אז התמונה תיצא מחוץ הקופסא*/
+}
+/* העיצוב החיצוני של תמונת הפרופיל*/
+.two{
+    position: relative;/*המיקום של אלמנט ביחס למיקום המקורי בעמוד שבו הוא ממוקם. */
+    top: 70%;/* שוליים עליונים */
+    left: -2%;/*שוליים שמליים*/
+  
+}
+/* העיצוב הפנימי של תמונת הפרופיל */
+.dog {
+    border: 10px solid #fff; /* מסגרת לבנה ברוחב 10*/
+    border-radius: 200px; /* מעוצבת כעיגול בקןטר הזה*/ 
+    width: 200px; /*  אם הקוטר 200פקסל שמתי שרוחב 200*/
+    height: 200px;/* אם הקוטר 200 פקסל גם כאן שמתי שהגובה 200*/
+    position: absolute;/* המיקום שייקבע ביחס לאלמנט הקרוב ביותר שבתוכו מופיע באופן יחסי*/
+}
+ /* העיצוב של הכותרת הראשית באתר */   
+h1{
+        font-size: 3vw; /*הגודל של הכותרת*/
+        font-family: 'Rammetto One' ,Cursive; /* הפונט*/
+        padding-top: 10px;/*ריפוד עליון */
+        border-radius: 1px;/*רדיוס פיזור*/
+        text-align: center;/* הכותרת צריכה להיות באמצע על פי שמה שמופיע בתמונה*/
+        background-color: white;  /*הרקע של הקוטרת צריך להיות לבן כפי שמופיע בתמונה*/ 
+        
+    }
+   .title{
+    text-shadow: 0px 3px 3px #999999; /* צללית המסגרת */
+   }
+/* העיצוב של הבלוק הראשון*/
+.text{
+    font-family: 'Serif Bree', serif;  /* הפונט של טקסט התוכן */
+    display: grid; /*הגדרת תצוגה*/
+    padding: 2% 5% 2% 5%; /*הגדרת מרווח פנימי שמעלה ומתחת לאלמנט*/
+    font-family: "Bree Serif", serif;  /* הפונט של טקסט התוכן */
+     grid-template-columns: auto 0 auto auto ;/* הגדרת תבנית העמודות של הרשת - שתי עמודות ברוחב אוטומטי, עמודה ריקה, ושתי עמודות ברוחב אוטומטי */
+     
+}
+
+/* העיצוב ש התוכן בבוקס הראשון*/
+.text2{
+    font-family: "Bree Serif", serif;  /* הפונט של טקסט התוכן */
+        display: grid;/* הגדרת תצוגה */
+        grid-template-columns: 50% 50%;    /* הגדרת תבנית העמודות  שתי עמודות ברוחב של 50% כל אחת */
+        width: 100%; /* הגדרת רוחב האלמנט להיות 100% מרוחב האב */
+}
+/*העיצוב של התמונה */
+.Yael{ 
+
+   width: 30vw;/* הגדרת הרוחב*/
+    max-height: 600px;    /* הגבול המקסימלי לגובה הוא 600 פיקסלים */
+    object-fit: cover;   /* התאמת התמונה כך שתכסה את כל האלמנט */
+    min-width: 400px;  /* הגבול המינימלי לרוחב הוא 400 פיקסלים */
+    object-position:  right bottom;/* הגדרת תמקור התמונה בצד ימין תחתון של האלמנט */   
+    margin: auto;    /* מירוץ האלמנט במרכז האב */
+  
+}
+/* העיצוב של כל הבוקס*/
+.box1{
+    background: url('clouds.webp');/* הגדרת רקע*/
+    background-repeat: repeat; /*יש לו רקע חוזר על עצמו של התמונה */
+    display: flex; /* הגדרת תצוגה */
+    flex-direction: row-reverse;   /* הגדרת כיוון ה-flex להיות בכיוון ההפוך */}
+/* העיצוב של הבלוק שמצד ימינה*/
+.box2{
+    width: 50%;/* הגדרת רוחב האלמנט*/
+    display: flex;/*הגדרת תצוגה */
+    flex-direction: column; /* הצגת הפריטים בטור אחד */
+    justify-content: center; /* מרכז התוכן אנכית */
+    align-items: center;/* יישור תכונת ה-align למרכז האלמנט באופן אופקי */
+}
+/* העיצוב של בלוקים */
+.box5 {
+    font-family: "Bree Serif", serif; /* הפונט של טקסט התוכן */
+    border-left: 10px solid #cccaca; /* מסגרת ברוחב px10 בצבע cccaca */
+    background-color: #ffffff; /* רקע לבן */
+    padding-bottom: 15px; /* שוליים תחתונים של px15 */
+    margin: 10px 0; /* ריפוד של px10 בכל הצדדים */
+    text-align: center;/* התוכן באמצע*/
+    padding-left: 40%;/* הגדרת מרווח משמאל של 40% מרוחב החלון */
+    width: 90%;/* הגדרת רוחב האלמנט*/
+    padding-left: 15px;/* הגדרת מרווח משמאל של 15 פיקסלים */
+ }
+ /* העיצוב של הכותרת*/
+ .box2 h2{
+    font-family: 'Rammetto One' ,Cursive; /* הפונט*/
+    text-transform: uppercase;/* האותיות גדולות */
+    text-align: left;/* הגדרת יישור הטקסט לשמאל */
+    font-size: 2.5vw;/* הגדרת גודל הפונט ביחס לרוחב של החלון */
+
+ }
+ /* העיצוב של הקוו המפריד */
+.line{
+    width: 40%; /* הגדרת רוחב האלמנט*/
+    
+}
+.box3{
+    width: 50%;    /* הגדרת רוחב האלמנט*/
+    display: flex;/* הגדרת תצוגה */
+    flex-direction: row;/* הגדרת כיוון ה-flex להיות אופקי (משמאל לימין) */
+    align-items:center;/* יישור תכונת ה-align למרכז האלמנט באופן אופקי */
+    justify-content: end;/* הגדרת יישור הפריטים בציר האופקי לצד ימין של הגופן העיקרי */
+   
+
+}
+/*העיצוב של התוכן שמתחת הקוו- שם הממליץ*/
+.italic{
+    font-style: italic; /* הגופן יהיה מוטה*/
+}
+/* העיצוב של תמונת הכלב שבבוקס 2*/
+.DOG1{
+    object-position: center;/* התמונה באמצע*/
+
+   
+}
+  /* העיצוב של הכותרת */ 
+.pic h2{
+font-size: 2.5vw; /* הגודל של הפונט*/
+font-family: 'Rammetto One' ,Cursive; /* הפונט*/
+text-transform: uppercase; /* האותיות גדולות */
+text-align: center; /* הכותרת באמצע*/
+font-weight: bold; /* גופן מודגש */
+}
+/* העיצוב של התוכן והתמונות */
+.pic{
+
+    display: flex; /* הגדרת תצוגה */
+    flex-direction: column; /*הגדרת כיוון להיות עמודי*/
+    align-items: center; /* התמונות באמצע הבוקס*/
+    margin-top: 20px; /* מרווח מלמעלה */
+}
+ /* העיצוב של הבוקס של MEER THE WHOLE DEBUGGING SQUAD*/ 
+.friend{
+    display: grid;/* הגדרת תצוגה */
+    grid-template-columns: auto auto auto auto;/* הגדרת תבנית העמודות אורך העמודות יהיה קבוע בהתאם לתוכן שלהן */
+    padding: 10px; /* מרווח בין הפריטים */
+
+
+}
+/* העיצוב של התמונות*/
+.friend img {
+    width: 200px; /* רוחב התמונה - 200px */
+    height: 300px; /* גובה התמונה - 300px */
+    padding: 10px;/* ריפוד של 10 פיקסלים מכל צד */
+    object-fit: cover; /* הגדרת התאמת תמונה כך שתכסה את כל האלמנט */
+       
+}
+/* העיצוב של הבוקס האחרון באתר*/
+.zefat{
+    background-color: #5f5b5b; /* צבע הרקע */
+    padding: 10px; /* ריפוד מכל הצדדים */
+    color: black; /* צבע הטקסט */
+    font-weight: bold; /* גופן מודגש */
+    text-align: center; /* מרכוז טקסט אופקית */
+}
+
